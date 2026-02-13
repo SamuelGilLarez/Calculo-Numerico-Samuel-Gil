@@ -1,0 +1,55 @@
+===========================================================
+          METODOS NUMERICOS EN PYTHON - PROYECTO
+===========================================================
+
+Este proyecto contiene una coleccion de herramientas desarrolladas 
+en Python para la resolucion de problemas matematicos mediante 
+algoritmos numericos.
+
+-----------------------------------------------------------
+1. ARCHIVOS DEL REPOSITORIO
+-----------------------------------------------------------
+
+> biseccion.py
+  Implementa el Metodo de Biseccion para encontrar raices.
+  - Calcula el error relativo porcentual en cada paso.
+  - Valida el cambio de signo (Teorema de Bolzano).
+  - Incluye control de iteraciones para evitar bucles infinitos.
+
+> epsilon_raphson.py
+  Implementa el Metodo de Newton-Raphson.
+  - Utiliza diferenciacion automatica para f'(x) y f''(x).
+  - Calcula un criterio de convergencia antes de iniciar.
+  - Es significativamente mas rapido que la biseccion.
+
+> riemann.py (Diferenciacion Numerica)
+  Calcula la derivada de una funcion en un punto especifico.
+  - Incluye Diferencia Hacia Adelante, Atras y Centrada.
+  - Compara el resultado con el valor analitico real.
+  - Permite ajustar el tamaño del paso (h).
+
+-----------------------------------------------------------
+2. REQUISITOS DEL SISTEMA
+-----------------------------------------------------------
+
+Para ejecutar estos programas es necesario tener instalado:
+- Python 3.x
+- Libreria SymPy (pip install sympy)
+
+-----------------------------------------------------------
+3. INSTRUCCIONES DE USO
+-----------------------------------------------------------
+
+1. Ejecute el archivo desde la terminal: python nombre_del_archivo.py
+2. Ingrese la funcion solicitada (Ejemplo: exp(x) - 3*x**2).
+3. Ingrese los datos de intervalo, punto o error objetivo.
+4. El programa mostrara una tabla detallada con los resultados.
+
+-----------------------------------------------------------
+4. NOTAS DEL DESARROLLADOR
+-----------------------------------------------------------
+
+- Todos los programas utilizan SymPy para asegurar que la entrada
+  de funciones sea natural para el usuario.
+- Se han implementado bloques 'try-except' para manejar errores
+  matematicos o de sintaxis de forma
